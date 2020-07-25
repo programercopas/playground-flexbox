@@ -1,0 +1,148 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #dddddd;
+    line-height: 1.65;
+    padding-bottom: 1000px;
+    ;
+}
+
+.container-satu {
+    width: 800px;
+    margin: 50px auto;
+    background-color: #ffffff;
+    padding: 20px;
+    box-sizing: border-box;
+    display: flex;
+}
+
+.kolom-utama {
+    flex: 3;
+    order: 2;
+}
+
+.sidebar-satu {
+    flex: 1;
+    order: 1;
+}
+
+.sidebar-dua {
+    flex: 1;
+    order: 2;
+}
+
+
+/* Service */
+.container-dua {
+    max-width: 800px;
+    margin: 50px auto;
+}
+
+.layanan {
+    padding: 20px;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+}
+
+.layanan.satu {
+    background-color: rgb(125, 125, 204);
+}
+
+.layanan.dua {
+    background-color: rgb(91, 148, 91);
+}
+
+.layanan.tiga {
+    background-color: rgb(194, 86, 86);
+}
+
+/* Gallery */
+.container-tiga {
+    max-width: 800px;
+    margin: 50px auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.thumbnail {
+    width: 50%;
+}
+
+.thumbnail img {
+    width: 100%;
+}
+
+/* card */
+.container-empat {
+    width: 800px;
+    margin: 50px auto;
+    display: flex;
+}
+
+.card {
+    border: 1px solid #292828;
+    border-radius: 10px;
+    background-color: #eee;
+    overflow: hidden;
+    margin: 10px;
+    flex: 1;
+}
+
+.card.besar {
+    transform: scale(1.13);
+}
+
+.card .header {
+    height: 150px;
+    background-color: #666;
+}
+
+.card .content {
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+/* centering  */
+.container-lima {
+    width: 500px;
+    height: 500px;
+    margin: 50px;
+    border: 5px solid black;
+    display: flex;
+}
+
+.kotak {
+    height: 100px;
+    width: 100px;
+    background-color: brown;
+    color: white;
+    text-align: center;
+    margin: auto;
+    display: flex;
+}
+
+.kotak span {
+    margin: auto;
+}
+
+/* Responsive */
+@media(min-width: 600px) {
+    .container-dua {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .layanan {
+        width: 30%;
+    }
+
+    .thumbnail {
+        width: 25%;
+    }
+}
